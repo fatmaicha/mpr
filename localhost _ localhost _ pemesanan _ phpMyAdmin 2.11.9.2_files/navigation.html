@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0094)http://localhost/phpmyadmin/navigation.php?db=pemesanan&token=a9143ab061b15ae19041a90242d2d9b6 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <!--<base target="frame_content">--><base href="." target="frame_content">
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css.php">
+    <script type="text/javascript" src="./navigation.js.download"></script>
+    <script type="text/javascript" src="./functions.js.download"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    var image_minus = './themes/original/img/b_minus.png';
+    var image_plus = './themes/original/img/b_plus.png';
+
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0; 
+    var onLoadHandler = window.onload;  
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") { 
+                onLoadHandler(); 
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') { 
+                PMA_setFrameSize(); 
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") { 
+            resizeHandler(); 
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') { 
+            PMA_saveFrameSize(); 
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://localhost/phpmyadmin/main.php?token=a9143ab061b15ae19041a90242d2d9b6" target="frame_content"><img src="./logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://localhost/phpmyadmin/main.php?token=a9143ab061b15ae19041a90242d2d9b6" title="Home"><img class="icon" src="./b_home.png" width="16" height="16" alt="Home"></a>
+<a href="http://localhost/phpmyadmin/querywindow.php?db=pemesanan&amp;token=a9143ab061b15ae19041a90242d2d9b6&amp;no_js=true" title="Query window" onclick="javascript:if (window.parent.open_querywindow()) return false;"><img class="icon" src="./b_selboard.png" width="16" height="16" alt="Query window"></a>
+    <a href="http://localhost/phpmyadmin/Documentation.html" target="documentation" title="phpMyAdmin documentation"><img class="icon" src="./b_docs.png" width="16" height="16" alt="phpMyAdmin documentation"></a>
+    <a href="http://dev.mysql.com/doc/refman/5.0/en/index.html" target="mysql_doc"><img class="icon" src="./b_sqlhelp.png" width="16" height="16" alt="Documentation" title="Documentation"></a>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="http://localhost/phpmyadmin/index.php" target="_parent" id="left">
+    <label for="lightm_db">Database</label>
+    <input type="hidden" name="token" value="a9143ab061b15ae19041a90242d2d9b6">
+
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != &#39;&#39;) window.parent.openDb(this.value);">
+<option value="" dir="ltr">(Databases) ...</option>
+<option value="151240000415-fatmaichahildaputriyunia" title="">151240000415-fatmaichahildaputriyunia (5)</option>
+<optgroup label="atm">
+<option value="atm" title="">atm (1)</option>
+<option value="atm_2" title="">_2 (1)</option>
+</optgroup>
+<option value="cdcol" title="">cdcol (1)</option>
+<option value="chasugar" title="">chasugar (2)</option>
+<option value="db_faktur" title="">db_faktur (4)</option>
+<option value="diasnetdb" title="">diasnetdb (6)</option>
+<optgroup label="fatmaicha">
+<option value="fatmaicha" title="">fatmaicha (0)</option>
+<option value="fatmaicha_elecktronik" title="">_elecktronik (4)</option>
+<option value="fatmaicha_uas" title="">_uas (0)</option>
+</optgroup>
+<option value="information_schema" title="">information_schema (17)</option>
+<option value="latihan1" title="">latihan1 (0)</option>
+<option value="latihan2" title="">latihan2 (0)</option>
+<option value="latihan3" title="">latihan3 (0)</option>
+<option value="login" title="">login (1)</option>
+<option value="mahasiswa" title="">mahasiswa (0)</option>
+<option value="mysql" title="">mysql (23)</option>
+<option value="pemesanan" title="" selected="selected">pemesanan (1)</option>
+<option value="peminjaman" title="">peminjaman (0)</option>
+<option value="perkuliahandb" title="">perkuliahandb (1)</option>
+<option value="phpmyadmin" title="">phpmyadmin (8)</option>
+<option value="projection" title="">projection (4)</option>
+<option value="restoran" title="">restoran (0)</option>
+<option value="test" title="">test (0)</option>
+<option value="transfer-uang" title="">transfer-uang (1)</option>
+<option value="webauth" title="">webauth (1)</option>
+</select>
+<noscript>
+&lt;input type="submit" name="Go" value="Go" /&gt;
+</noscript>
+</form>
+</div>
+
+<div id="left_tableList">
+    <p><a class="item" href="http://localhost/phpmyadmin/db_structure.php?db=pemesanan&amp;token=a9143ab061b15ae19041a90242d2d9b6" title="">
+    <span class="navi_dbName">pemesanan</span> <bdo dir="ltr">(1)</bdo> </a></p><ul id="subel0"><li>
+<a title="Browse:  (0 Rows)" id="browse_pemesanan.tbl_pemesanan" href="http://localhost/phpmyadmin/sql.php?db=pemesanan&amp;token=a9143ab061b15ae19041a90242d2d9b6&amp;table=tbl_pemesanan&amp;goto=tbl_structure.php"><img class="icon" src="./b_sbrowse.png" id="icon_pemesanan.tbl_pemesanan" width="10" height="10" alt="Browse"></a>
+<a href="http://localhost/phpmyadmin/tbl_structure.php?db=pemesanan&amp;token=a9143ab061b15ae19041a90242d2d9b6&amp;table=tbl_pemesanan" title=" (0 Rows)" id="pemesanan.tbl_pemesanan">tbl_pemesanan</a></li>
+</ul></div>
+</body></html>
